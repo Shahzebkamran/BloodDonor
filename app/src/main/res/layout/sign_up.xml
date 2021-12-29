@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/White"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blood Donor"
+        android:textSize="46dp"
+        android:layout_margin="60dp"
+        android:textFontWeight=""
+        >
+    </TextView>
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Name"
+        android:textColorHint="@color/LightGrey"
+        android:background="@drawable/edit_txt"
+        android:textColor="@color/Black"
+        android:elevation="10dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColorHint="@color/LightGrey"
+        android:background="@drawable/edit_txt"
+        android:hint="Location"
+        android:textColor="@color/Black"
+        android:layout_marginBottom="15dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:elevation="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Status"
+        android:textColorHint="@color/LightGrey"
+        android:background="@drawable/edit_txt"
+        android:textColor="@color/Black"
+        android:id="@+id/Status"
+        android:elevation="10dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Blood Group"
+        android:elevation="10dp"
+        android:textColorHint="@color/LightGrey"
+        android:textColor="@color/Black"
+        android:background="@drawable/edit_txt"
+        android:id="@+id/BloodGroup"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_btn"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:textColor="@color/White"
+        android:elevation="30dp"
+        android:id="@+id/signup_button"
+        android:clickable="true"
+        android:focusable="true"
+        >
+    </Button>
+</LinearLayout>

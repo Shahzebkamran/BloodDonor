@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Black"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dip"
+        >
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_weight="1"
+            android:textColor="@color/White"
+            android:id="@+id/getText"
+            />
+        <ImageView
+            android:id="@+id/WidgetSearchIcon"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_width="30dp"
+            android:layout_height="45dip"
+            android:paddingTop="8dip"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/donersList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="15dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_baseline_phone_forwarded_24" />
+
+    </RelativeLayout>
+</LinearLayout>
